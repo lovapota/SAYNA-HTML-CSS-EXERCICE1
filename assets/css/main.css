@@ -1,10 +1,11 @@
+/*Variables de couleurs*/
 :root{
     --color1:#C55394;
     --color2:#EB43A3;
     --color3:#FFFFFF;
     --color4:#000000;
 }
-/* Style de l'en tete de page*/
+/*====Style de l'en tete de page===*/
 /*fond du header*/
 ul {
     overflow: hidden;
@@ -58,7 +59,7 @@ h1{
     padding: 50px 20px;
     background-image: url("../img/rainbow.png");
 }
-/* Fonds de la base*/
+/*===Fonds de la base===*/
 .fenosoa{
     width:900px;
     margin: auto;
@@ -102,7 +103,7 @@ figcaption{
     background-color:var(--color4);
 }
 img:hover {
-    transform: scale(1.2);
+    transform: scale(1.2); /*Zoomer les images*/
 }
 .rehetra{
     width: 100%;
@@ -122,7 +123,7 @@ img:hover {
     margin: 5px 0px 0px 0px;
     background-color: var(--color1);
 }
-/*Style de footer*/
+/*===Style de footer===*/
 footer{
     text-align:right;
     color: var(--color3);
