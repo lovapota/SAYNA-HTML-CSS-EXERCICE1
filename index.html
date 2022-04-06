@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Petite icone sur le titre du page-->    
+<link rel="icon" type="image/png" sizes="16x16" href="assets/icone/Icorne.png">    
 <!--Titre de la page-->
     <title>Site MyUnicorne</title>
 <!--Lien pour annuler tout les styles par defaut-->
@@ -14,21 +16,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
 <!--Lien pour avoir l'icone-->
     <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+<!--Lien pour mon JavaScript-->
+    <script defer src="assets/JavaScript/Index.js"></script>
 </head>
 <body>
 <!--====================================Le barre de navigation==================================-->
    <header>
         <nav>
-            <ul>
-                <div>
-                    <li><a href="index.html">MyUnicorn</a></li>
-                </div>
-                <div class="lova">
-                    <li><a class="active" href="#principe">nos principe</a></li>
-                    <li><a class="zanne" href="#licorne">nos licorne</a></li>
-                    <li><a class="zanne" href="#lieu">nous trouver</a></li> 
-                </div>
-            </ul>
+            <div class="logo">
+                <a href="index.html">MyUnicorn</a>
+            </div>
+            <div class="lova">
+                <a class="active" href="#principe">nos principe</a>
+                <a class="zanne" href="#licorne">nos licorne</a>
+                <a class="zanne" href="#lieu">nous trouver</a> 
+            </div>
         </nav>
    </header><!--end header-->
 <!--===============================================================================================-->
@@ -101,7 +103,7 @@
 <!--=============================Formulaire de donne=============================================-->
                             <form action="index.html">
                                 <input type="email" name="email" placeholder="votre@email.fr"><br>
-                                <input class="button" type="submit" value="Valider">
+                                <input class="button" id="lova" type="submit" value="Valider">
                             </form>
                         </div>
                     </div>
