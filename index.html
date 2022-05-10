@@ -28,10 +28,10 @@
             <div class="logo">
                 <a href="index.html">MyUnicorn</a>
             </div>
-            <div class="lova">
+            <div class="barre">
                 <a class="active" href="#principe">nos principe</a>
-                <a class="zanne" href="#licorne">nos licorne</a>
-                <a class="zanne" href="#lieu">nous trouver</a> 
+                <a class="desactive" href="#licorne">nos licorne</a>
+                <a class="desactive" href="#lieu">nous trouver</a> 
             </div>
         </nav>
    </header><!--end header-->
@@ -39,12 +39,12 @@
 <!--================================Le base du page================================================-->
     <section>
 <!--==========================================Titre de la page=====================================-->
-<!--===titre 1======-->
+<!--=================titre 1==============-->
         <div>
-            <h1>Un jour, une licorne</h1>
+            <h1 id="titre">Un jour, une licorne</h1>
         </div><!--end titre 1-->
 <!--===============================Le page du site==========================================-->
-        <div class="fenosoa">
+        <div class="descript">
                 <div>
                     <h2 id="principe">
                         <i class="fa fa-star-o" aria-hidden="true"></i> Le principe
@@ -61,20 +61,21 @@
             </div>
 <!--==================================Les images de licorne====================================-->
             <div class="contenair">
+                <figure id="lic1">
+                    <img id="img1" src="assets/img/photo1.jpg" alt="Licorne">
+                    <figcaption id="text1">Lulu Confetty</figcaption>
+                </figure>
+                <figure id="lic2">
+                    <img id="img2" src="assets/img/photo2.jpg" alt="Licorne">
+                    <figcaption id="text2">Lapillon Magik</figcaption>
+                </figure>
+                <figure id="lic3">
+                    <img id="img3" src="assets/img/photo3.jpg" alt="Licorne">
+                    <figcaption id="text3">El Ninjacorn</figcaption>
+                </figure id="li4">
                 <figure>
-                    <div>
-                        <img src="assets/img/photo1.jpg" alt="Licorne">
-                        <figcaption>Lulu Confetty</figcaption>
-                    </div>
-                </figure>
-                <figure><img src="assets/img/photo2.jpg" alt="Licorne">
-                    <figcaption>Lapillon Magik</figcaption>
-                </figure>
-                <figure><img src="assets/img/photo3.jpg" alt="Licorne">
-                    <figcaption>El Ninjacorn</figcaption>
-                </figure>
-                <figure><img src="assets/img/photo4.jpg" alt="Licorne">
-                    <figcaption>Sweety Candy</figcaption>
+                    <img id="img4" src="assets/img/photo4.jpg" alt="Licorne">
+                    <figcaption id="text4">Sweety Candy</figcaption>
                 </figure>
             </div><!--end des images de licorne-->
 <!--=================================Lieu du magasin=============================================-->
@@ -105,7 +106,7 @@
 <!--=============================Formulaire de donne=============================================-->
                             <form action="index.html">
                                 <input type="email" name="email" placeholder="votre@email.fr"><br>
-                                <input class="button" id="lova" type="submit" value="Valider">
+                                <input class="button" id="barre" type="submit" value="Valider">
                             </form>
                         </div>
                     </div>

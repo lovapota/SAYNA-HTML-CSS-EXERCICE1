@@ -1,7 +1,7 @@
 /*Variables de couleurs*/
 :root{
     --color1:#EB43A3;
-    --color2:#e74c3c;
+    --color2:#f1948a;
     --color3:#FFFFFF;
     --color4:#000000;
     --color5:#f7dc6f;
@@ -35,22 +35,62 @@ nav{
 .logo a{
     color:var(--color3);
     text-decoration: none;
+    animation-name: loko;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
 }
+@keyframes loko {
+    0% {
+        color:var(--color3);
+    }
+    25%{
+        color:var(--color5);
+    }
+    50%{
+        color:var(--color1);
+    }
+    75%{
+        color:var(--color2);
+    }
+    100%{
+        color:var(--color3);
+    }
+ }
 /*couleur des liens*/
-.zanne:hover:not(.active){
+.desactive:hover:not(.active){
     background-color:var(--color2);
 }
 .active{
     background-color: var(--color2);
 }
+/*Titre*/
+#titre{
+    animation-name: fade;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes fade {
+    0% {
+        opacity: 0%;
+        transform: translateX(-100px);
+    }
+    50%{
+        opacity: 100%;
+        transform: scale(1.2);
+    }
+    100%{
+        opacity: 0%;
+        transform: translateX(-100px);
+    }
+ }
 /*Propriete des barre de navigation du page*/
-.lova{
+.barre{
     display: flex;
     font-weight: 700;
     font-variant: small-caps; 
     font-family: 'Merriweather', 'cursive'; 
 }
-.active, .zanne{
+.active, .desactive{
     font-size: 25px;
     margin: 0px 2px;
     text-align: center;
@@ -81,7 +121,7 @@ h1{
     background-image: url("../img/rainbow.png");
 }
 /*===Fonds de la base===*/
-.fenosoa{
+.descript{
     width:70%;
     margin: auto;
     border-radius: 20px;
@@ -93,6 +133,22 @@ h1{
 h2, h3{
     font-size: 30px;
 }
+h2{
+    animation-name: GauDro;
+    animation-duration: 5s;
+}
+@keyframes GauDro {
+    0% {
+        opacity: 0%;
+        transform: translateX(-50px);
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+ }
 p{
     font-size: 25px;
     text-align: justify;
